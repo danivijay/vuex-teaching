@@ -17,11 +17,7 @@ export default {
   name: 'app',
   data () {
     return {
-      products: [
-        { name: 'hyundai', prize: '24' },
-        { name: 'audi', prize: '28' },
-        { name: 'bmw', prize: '29' }
-      ]
+
     }
   }
 }

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <c1 :products="products"></c1>
-    <c2 :products="products"></c2>
+    <c1></c1>
+    <c2></c2>
   </div>
 </template>
 

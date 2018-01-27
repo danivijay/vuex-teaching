@@ -15,23 +15,22 @@
 </template>
 
 <script>
+import {mapGetters} from 'vuex'
+import {mapActions} from 'vuex'
+
 export default {
   computed: {
     products () {
       return this.$store.state.products
     },
-    offerSale () {
-      return this.$store.getters.offerSale
-    }
+    ...mapGetters([
+      'offerSale'
+    ])
   },
   methods: {
-    reducePrize (val) {
-      // call mutation directly
-      //this.$store.commit('reducePrize', val)
-
-      // call mutaion via actions
-      this.$store.dispatch('reducePrize', val)
-    }
+    ...mapActions([
+      'reducePrize'
+    ])
   }
 }
 </script>
